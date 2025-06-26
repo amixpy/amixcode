@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amixcode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>amixcode</h1>
+                <select id="languageSelect">
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="cpp">C++</option>
+                </select>
+                <button id="downloadApp" class="download-app-btn">Download Desktop App</button>
+            </div>
+        </div>
+        <div class="editor-container">
+            <textarea id="codeEditor" rows="20" placeholder="Write your code here...">
+console.log("Hello, World!");
+</textarea>
+        </div>
+        <div class="controls">
+            <button id="runButton">Run</button>
+            <button id="clearButton">Clear</button>
+            <button id="downloadButton">Download</button>
+        </div>
+        <div class="output-container">
+            <h3>Output:</h3>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
